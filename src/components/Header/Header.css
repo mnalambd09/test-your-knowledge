@@ -1,0 +1,25 @@
+.header a{
+    text-decoration: none;
+    padding: 2px 5px;
+    margin-right: 15px;
+    color: greenyellow;
+    
+}
+.header a:hover{
+    background-color: lightblue;
+}
+.header{
+    background-color: black;
+    height: 50px;
+    /* display: flex;  */
+    justify-content: center;
+    align-items: center;
+}
+.hea{
+    color: red;
+    margin-top: 30px;
+
+}
+.active{
+    background-color: red;
+}
