@@ -5,7 +5,16 @@ import { ToastContainer, toast } from 'react-toastify';
 
 
 const Option = ({ multiple, id }) => {
-    const notify = () => toast("Your Answer is Wrong !!!");
+    const notify = () => toast.success('Your Answer is Wrong', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     return (
         <div className='option'>
             <p>Option : {multiple} </p>

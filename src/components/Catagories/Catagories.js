@@ -4,8 +4,8 @@ import './Catagories.css';
 
 
 const Friend = ({ friend }) => {
-    // console.log(friend)
-    const { name, logo, id } = friend
+    console.log(friend)
+    const { name, logo, id, total } = friend
     const navigate = useNavigate();
 
     const handleNavigate = () => {
@@ -15,8 +15,8 @@ const Friend = ({ friend }) => {
         <div className='friend'>
             <img src={logo} alt="" />
             <div className='button-section'>
-                <h3>Name : {name}</h3>
-                <button className='btn-primary' onClick={handleNavigate}>Start Practice</button>
+                <h4>Name : {name}</h4>
+                <button className='btn-primary' onClick={handleNavigate}>Start Practice : {total} </button>
                 
             </div>
 

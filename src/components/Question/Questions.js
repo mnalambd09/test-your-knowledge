@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 
 
 const Questions = ({ questions }) => {
-    const { question, options, correctAnswer, id } = questions
+    const { question, options, correctAnswer, id, name } = questions
     const notify = () => toast.success(correctAnswer, {
         position: "top-center",
         autoClose: 5000,
@@ -22,6 +22,7 @@ const Questions = ({ questions }) => {
     return (
         <div className='quiz-section'>
             <div className='question'>
+                <h2>{name}</h2>
                 <p>Question : {question}</p>
                 <FontAwesomeIcon icon={faEye} onClick={notify} />
             </div>
