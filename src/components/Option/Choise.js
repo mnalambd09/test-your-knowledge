@@ -1,7 +1,7 @@
 import React from 'react';
 import './Choise.css'
 import Form from 'react-bootstrap/Form';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 
 const Option = ({ multiple, id }) => {
@@ -14,14 +14,11 @@ const Option = ({ multiple, id }) => {
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
+    });
     return (
         <div className='option'>
             <p>Option : {multiple} </p>
-
             <Form.Check type="radio" name={id} aria-label="radio 1" onClick={notify} />
-            
-
         </div>
     );
 };

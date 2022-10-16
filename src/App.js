@@ -2,7 +2,7 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import About from './components/Blog/Blog';
+import Blog from './components/Blog/Blog';
 import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
@@ -23,7 +23,7 @@ function App() {
           },
           element: <Home></Home>
         },
-        { path: '/blog', element: <About></About> },
+        { path: '/blog', element: <Blog></Blog> },
         
         {
           path: '/Home',

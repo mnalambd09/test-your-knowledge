@@ -1,7 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Questions from '../Question/Questions';
-import './Quiz.css'
+import './Quiz.css';
+
+
 
 const Quiz = () => {
     const friend = useLoaderData();

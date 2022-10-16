@@ -1,6 +1,7 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Catagories.css';
+
 
 
 const Friend = ({ friend }) => {
@@ -13,11 +14,12 @@ const Friend = ({ friend }) => {
     }
     return (
         <div className='friend'>
-            <img src={logo} alt="" />
-            <div className='button-section'>
-                <h4>Name : {name}</h4>
-                <button className='btn-primary' onClick={handleNavigate}>Start Practice : {total} </button>
-                
+            <div>
+                <img src={logo} alt="" />
+                <div className='button-section'>
+                    <h4>Name : {name}</h4>
+                    <button className='btn-primary' onClick={handleNavigate}>Start Practice : {total} </button>
+                </div>
             </div>
 
         </div>
