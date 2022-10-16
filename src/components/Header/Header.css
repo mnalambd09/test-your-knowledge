@@ -12,16 +12,21 @@
     background-color: black;
     height: 80px;
     display: flex; 
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     padding-right: 100px;
+    padding-left: 100px;
     
+}
+.header-section{
+    background-color: black;
 }
 .hea{
     color: red;
-    /* margin-top: 30px; */
-
 }
 .active{
     background-color: red;
+}
+.logo img{
+    width: 150px;
 }

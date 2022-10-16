@@ -11,11 +11,13 @@ import Quiz from './components/Quiz/Quiz';
 function App() {
   const router = createBrowserRouter([
     {
+      
       path: '/',
       element: <Main></Main>, children: [
         
         
         { path: '/about', element: <About></About> },
+        
         {
           path: '/Home',
           loader: async () => {

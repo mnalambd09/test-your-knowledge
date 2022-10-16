@@ -1,17 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
+import image from '../logo.png'
 
 const Header = () => {
     return (
         <div className='header'>
-            <nav>
-                {/* <NavLink to='/Home'>Home</NavLink> */}
-                <NavLink className={({isActive}) => isActive ? 'active' : undefined } to='/Home'>Home</NavLink>
-                <NavLink to='/about'>About</NavLink>
-                {/* <NavLink to='/contact'>Usefull NavLink</NavLink> */}
-                {/* <NavLink to='/posts'>Posts</NavLink> */}
-            </nav>
+            <div className='logo'>
+                <img src={image} alt="" />
+            </div>
+            <div className='header-section'>
+                <nav>
+                    {/* <NavLink to='/Home'>Home</NavLink> */}
+                    <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/Home'>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
+                    {/* <NavLink to='/contact'>Usefull NavLink</NavLink> */}
+                    {/* <NavLink to='/posts'>Posts</NavLink> */}
+                </nav>
+            </div>
+
         </div>
     );
 };
