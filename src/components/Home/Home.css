@@ -3,15 +3,27 @@
     grid-template-columns: repeat(4, 1fr);
 }
 .header-section{
-    background-color: rgb(71, 184, 255);
     padding: 50px;
     text-align: center;
-    color: white;
+    color: gray;
    
 }
+.header-section{
+    width: 50%;
+}
 .header-section p{
-    width: 800px;
     text-align: center;
     margin: 0px auto;
 
+}
+.background{
+    width: 50%;
+}
+.background img{
+    width: 100%;
+}
+.header-area{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }

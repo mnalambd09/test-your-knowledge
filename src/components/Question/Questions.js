@@ -11,7 +11,7 @@ const Questions = ({ questions }) => {
     const { question, options, correctAnswer, id } = questions
     const notify = () => toast.success(correctAnswer, {
         position: "top-center",
-        autoClose: 8000,
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
