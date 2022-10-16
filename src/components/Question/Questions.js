@@ -1,6 +1,9 @@
 import React from 'react';
 import './Questions.css'
 import Choise from '../Option/Choise';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-regular-svg-icons';
+
 
 const Questions = ({ questions }) => {
     const { question, options } = questions
@@ -8,7 +11,7 @@ const Questions = ({ questions }) => {
         <div className='quiz-section'>
             <div className='question'>
                 <p>Question : {question}</p>
-                
+                <FontAwesomeIcon icon={faEye} />
             </div>
             <div className='multiple'>
             

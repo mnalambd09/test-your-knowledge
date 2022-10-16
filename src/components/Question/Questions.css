@@ -9,6 +9,9 @@
     background-color: aqua;
     padding: 25px;
     /* margin: 20px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
    
 }
 .multiple{
