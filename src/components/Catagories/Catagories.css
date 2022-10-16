@@ -1,0 +1,26 @@
+.friend{
+    border: 2px solid tomato;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+.friend img{
+    width: 100%;
+}
+.button-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.btn-primary{
+    background-color:green;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 50%;
+    color: white;
+    font-size: 15px;
+    align-items: right;
+}

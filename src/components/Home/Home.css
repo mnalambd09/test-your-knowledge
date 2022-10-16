@@ -1,0 +1,17 @@
+.catagories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.header-section{
+    background-color: rgb(71, 184, 255);
+    padding: 50px;
+    text-align: center;
+    color: white;
+   
+}
+.header-section p{
+    width: 800px;
+    text-align: center;
+    margin: 0px auto;
+
+}

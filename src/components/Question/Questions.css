@@ -1,0 +1,18 @@
+.quiz-section{
+    background-color: green;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px yellowgreen;
+}
+.question{
+    background-color: aqua;
+    padding: 25px;
+    /* margin: 20px; */
+   
+}
+.multiple{
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
