@@ -12,8 +12,6 @@ const Quiz = () => {
                 friend.data.questions.map(questions => <Questions
                     key={questions.id}
                     questions={questions}
-                    
-
                 ></Questions>)
                
             }

@@ -1,11 +1,11 @@
 
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About/About';
 import Main from './layout/Main';
 import Home from './components/Home/Home';
-import FriendDetails from './components/FriendDetails/Quiz';
+import Quiz from './components/Quiz/Quiz';
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
             // console.log(params.friends)
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.friendId}`)
           },
-          element: <FriendDetails></FriendDetails>
+          element: <Quiz></Quiz>
         },
        
       ]
