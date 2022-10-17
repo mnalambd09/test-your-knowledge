@@ -17,7 +17,9 @@ const Option = ({ multiple, id }) => {
     });
     return (
         <div className='option'>
-            <p>Option : {multiple} </p>
+            <ul>
+                <li>{multiple}</li>
+            </ul>
             <Form.Check type="radio" name={id} aria-label="radio 1" onClick={notify} />
         </div>
     );
