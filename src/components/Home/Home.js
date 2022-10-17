@@ -28,18 +28,18 @@ const Friends = () => {
 
             </div>
             <Row className='catagories'>
-                
-                        {
-                            friends.data.map(friend =>
-                                <Col xs={12} md={6} lg={3}>
-                                <Friend
-                                    key={friend.id}
-                                    friend={friend}
-                                ></Friend>
-                                 </Col>
-                            )
-                        }
-               
+
+                {
+                    friends.data.map(friend =>
+                        <Col xs={12} md={6} lg={3}>
+                            <Friend
+                                key={friend.id}
+                                friend={friend}
+                            ></Friend>
+                        </Col>
+                    )
+                }
+
             </Row>
         </div>
     );

@@ -6,16 +6,17 @@ import Blog from './components/Blog/Blog';
 import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
+import Grap from './components/Grap/Grap';
 
 
 function App() {
   const router = createBrowserRouter([
     {
-      
+
       path: '/',
       element: <Main></Main>, children: [
-        
-        
+
+
         {
           path: '/',
           loader: async () => {
@@ -23,14 +24,21 @@ function App() {
           },
           element: <Home></Home>
         },
-        { path: '/blog', element: <Blog></Blog> },
-        
+
         {
           path: '/Home',
           loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
           element: <Home></Home>
+        },
+        { path: '/blog', element: <Blog></Blog> },
+        {
+          path: '/Grap',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
+          element: <Grap></Grap>
         },
         {
           path: '/friend/:friendId',
@@ -40,7 +48,7 @@ function App() {
           },
           element: <Quiz></Quiz>
         },
-       
+
       ]
     },
     { path: '*', element: <div><h1>Sorry This Page Not Found</h1></div> },

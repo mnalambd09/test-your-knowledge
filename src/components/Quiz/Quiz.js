@@ -7,7 +7,7 @@ import './Quiz.css';
 
 const Quiz = () => {
     const friend = useLoaderData();
-    console.log(friend.data.questions)
+    // console.log(friend.data.questions)
     return (
         <div className='quiz'>
             {

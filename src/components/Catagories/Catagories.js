@@ -5,7 +5,6 @@ import './Catagories.css';
 
 
 const Friend = ({ friend }) => {
-    console.log(friend)
     const { name, logo, id, total } = friend
     const navigate = useNavigate();
 
@@ -21,7 +20,6 @@ const Friend = ({ friend }) => {
                     <button className='btn-primary' onClick={handleNavigate}>Start Practice : {total} </button>
                 </div>
             </div>
-
         </div>
     );
 };

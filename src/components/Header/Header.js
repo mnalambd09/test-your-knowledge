@@ -11,11 +11,9 @@ const Header = () => {
             </div>
             <div>
                 <nav>
-                    {/* <NavLink to='/Home'>Home</NavLink> */}
                     <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/Home'>Home</NavLink>
                     <NavLink to='/blog'>Blog</NavLink>
-                    {/* <NavLink to='/contact'>Usefull NavLink</NavLink> */}
-                    {/* <NavLink to='/posts'>Posts</NavLink> */}
+                    <NavLink to='/grap'>Graph</NavLink>
                 </nav>
             </div>
 
